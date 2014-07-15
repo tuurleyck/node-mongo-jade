@@ -7,7 +7,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 // Database
 var mongo = require('mongoskin');
-var mongoUrl = process.env.MONGOLAB_URL || 'mongodb://localhost:27017/nodeSample';
+var mongoUrl = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/nodeSample';
 var db = mongo.db(mongoUrl, {native_parser:true});
 
 var routes = require('./routes/index');
