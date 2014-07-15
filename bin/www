@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+require('newrelic');
 var debug = require('debug')('node-mong-jade');
 var app = require('../app');
 
